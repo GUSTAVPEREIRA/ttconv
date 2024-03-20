@@ -33,7 +33,6 @@ import re
 
 from ttconv.config import ModuleConfiguration
 import ttconv.style_properties as styles
-from ttconv.imsc import utils
 from ttconv.time_code import SmpteTimeCode
 
 _SMPTE_TIME_CODE_DF_PATTERN = re.compile(SmpteTimeCode.SMPTE_TIME_CODE_DF_PATTERN)

@@ -1,1 +1,0 @@
-Retrieved from https://github.com/web-platform-tests/wpt

@@ -181,17 +181,10 @@ class SrtContext:
     return "\n".join(p.to_string(id + 1) for id, p in enumerate(self._paragraphs))
 
 
-#
-# srt writer
-#
-
-
 def from_model(doc: model.ContentDocument, config: Optional[SRTWriterConfiguration] = None, progress_callback=lambda _: None) -> str:
   """Converts the data model to a SRT document"""
 
   srt = SrtContext(config if config is not None else SRTWriterConfiguration())
-
-  # split progress between ISD construction and SRT writing
 
   def _isd_progress(progress: float):
     progress_callback(progress / 2)
